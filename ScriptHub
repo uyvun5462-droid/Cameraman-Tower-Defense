@@ -1,1 +1,9 @@
-loadstring(game:HttpGet("https://esclipse-keysystem.bhieu4225.workers.dev/loader"))()
+-- Chạy script thứ 1 ở một luồng độc lập
+task.spawn(function()
+    loadstring(game:HttpGet("https://esclipse-keysystem.bhieu4225.workers.dev/loader"))()
+end)
+
+-- Chạy script thứ 2 cùng lúc ở một luồng độc lập khác
+task.spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/uyvun5462-droid/Script-Loading-Gui-Player/refs/heads/main/HubV2ctd"))()
+end)
